@@ -1,6 +1,4 @@
-package com.example.wadaihjparty.model
-
-import com.example.wadaihjparty.domain.model.Cake
+package com.example.wadaihjparty.domain.model
 
 data class CartItem(
     val cake: Cake,

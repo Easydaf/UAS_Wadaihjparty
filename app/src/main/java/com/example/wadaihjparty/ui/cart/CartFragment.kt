@@ -10,7 +10,7 @@ import androidx.lifecycle.Observer       // <-- Pastikan import ini ada
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.wadaihjparty.data.local.CartManager
 import com.example.wadaihjparty.databinding.FragmentCartBinding
-import com.example.wadaihjparty.model.CartItem
+import com.example.wadaihjparty.domain.model.CartItem
 
 class CartFragment : Fragment(), CartItemListener {
     private var _binding: FragmentCartBinding? = null

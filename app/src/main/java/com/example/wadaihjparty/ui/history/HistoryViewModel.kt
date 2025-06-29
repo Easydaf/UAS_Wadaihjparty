@@ -1,4 +1,4 @@
-package com.example.wadaihjparty.ui.history // Sesuaikan package-mu
+package com.example.wadaihjparty.ui.history
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

@@ -27,9 +27,9 @@ class CakeAdapter(
             tvCakeDetailName.text = cake.name
             tvHistoryPrice.text = cake.formattedPrice
             Glide.with(ivCakeImage.context)
-                .load(cake.imageUrl) // Menggunakan URL dari API
-                .placeholder(R.drawable.baseline_cake_24) // Gambar sementara saat loading
-                .error(R.drawable.baseline_cake_24) // Gambar jika terjadi error
+                .load(cake.imageUrl)
+                .placeholder(R.drawable.baseline_cake_24)
+                .error(R.drawable.baseline_cake_24)
                 .into(ivCakeImage)
 
             root.setOnClickListener {

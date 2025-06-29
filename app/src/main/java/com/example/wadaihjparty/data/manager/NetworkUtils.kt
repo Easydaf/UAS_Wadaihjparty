@@ -1,4 +1,4 @@
-package com.example.wadaihjparty.data.manager // Sesuaikan package-mu
+package com.example.wadaihjparty.data.manager
 
 import android.content.Context
 import android.net.ConnectivityManager

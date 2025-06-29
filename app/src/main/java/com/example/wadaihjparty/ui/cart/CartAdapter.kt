@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.wadaihjparty.databinding.ItemCartBinding
-import com.example.wadaihjparty.model.CartItem
+import com.example.wadaihjparty.domain.model.CartItem
 import com.example.wadaihjparty.R
 
 class CartAdapter(
@@ -26,11 +26,11 @@ class CartAdapter(
         with(holder.binding) {
             tvCartName.text = cartItem.cake.name
             tvQuantity.text = cartItem.quantity.toString()
-            Glide.with(ivCartImage.context) // Gunakan ID 'ivCartImage' yang benar
-                .load(cartItem.cake.imageUrl.ifEmpty { R.drawable.baseline_cake_24 }) // Muat URL, jika kosong, pakai placeholder
-                .placeholder(R.drawable.baseline_cake_24) // Gambar sementara saat loading
-                .error(android.R.drawable.ic_dialog_alert) // Gambar error bawaan Android
-                .into(ivCartImage) // Gunakan ID 'ivCartImage' yang benar
+            Glide.with(ivCartImage.context)
+                .load(cartItem.cake.imageUrl.ifEmpty { R.drawable.baseline_cake_24 })
+                .placeholder(R.drawable.baseline_cake_24)
+                .error(android.R.drawable.ic_dialog_alert)
+                .into(ivCartImage)
 
             btnIncrease.setOnClickListener {
                 listener.onIncreaseClicked(cartItem)
@@ -43,9 +43,7 @@ class CartAdapter(
     }
     override fun getItemCount(): Int = items.size
     fun updateData(newItems: List<CartItem>) {
-        // Cukup ganti referensi list-nya dengan list yang baru
         items = newItems
-        // Beritahu adapter datanya sudah berubah agar UI di-refresh
         notifyDataSetChanged()
     }
 }

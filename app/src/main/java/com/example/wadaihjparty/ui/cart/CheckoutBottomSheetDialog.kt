@@ -37,7 +37,6 @@ class CheckoutBottomSheetDialog(private val totalItems: Int, private val totalPr
             if (NetworkUtils.isInternetAvailable(requireContext())) {
                 sendOrderToWhatsApp()
             } else {
-                // Jika tidak ada internet, tampilkan pesan dan jangan lakukan apa-apa
                 Toast.makeText(requireContext(), "Tidak ada koneksi internet", Toast.LENGTH_SHORT).show()
             }
         }

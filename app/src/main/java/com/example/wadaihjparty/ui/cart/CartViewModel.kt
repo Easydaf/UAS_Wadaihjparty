@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.wadaihjparty.data.local.CartManager
-import com.example.wadaihjparty.model.CartItem
+import com.example.wadaihjparty.domain.model.CartItem
 class CartViewModel : ViewModel() {
 
     private val _cartItems = MutableLiveData<List<CartItem>>()

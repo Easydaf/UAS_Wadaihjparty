@@ -1,7 +1,7 @@
 package com.example.wadaihjparty.data.local
 
 import com.example.wadaihjparty.domain.model.Cake
-import com.example.wadaihjparty.model.CartItem
+import com.example.wadaihjparty.domain.model.CartItem
 
 
 object CartManager {

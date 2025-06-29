@@ -20,7 +20,6 @@ class ProfileFragment : Fragment() {
     private var _binding: FragmentProfileBinding? = null
     private val binding get() = _binding!!
 
-    // Inisialisasi ViewModel untuk Profile
     private val viewModel: ProfileViewModel by viewModels()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
@@ -35,7 +34,6 @@ class ProfileFragment : Fragment() {
         setupClickListeners()
     }
 
-    // Fungsi untuk mengamati perubahan data dari
     private fun observeViewModel() {
         viewModel.userProfile.observe(viewLifecycleOwner) { profile ->
             if (profile != null) {

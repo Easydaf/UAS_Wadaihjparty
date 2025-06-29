@@ -64,14 +64,11 @@ class HomeFragment : Fragment() {
     }
 
     private fun observeViewModel() {
-        // Mengamati perubahan pada daftar kue
         viewModel.cakeList.observe(viewLifecycleOwner) { cakes ->
             cakeAdapter.updateData(cakes)
         }
 
-        // Mengamati status loading dari ViewModel
         viewModel.isLoading.observe(viewLifecycleOwner) { isLoading ->
-            // Tampilkan atau sembunyikan ikon loading dari swipe refresh
             binding.swipeRefreshLayout.isRefreshing = isLoading
         }
     }
