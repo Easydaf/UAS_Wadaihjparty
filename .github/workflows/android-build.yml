@@ -5,7 +5,7 @@ name: Build Wadai Hj. Party APK
 on:
   # Berjalan setiap kali ada push ke branch 'UAS-Mobile'
   push:
-    branches: [ "UAS-Mobile" ]
+    branches: [ "main" ]
 
   # Baris ini memungkinkan kamu menjalankan workflow secara manual dari GitHub
   workflow_dispatch:
