@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1042494152391",
+    "project_id": "wadaihjparty-app",
+    "storage_bucket": "wadaihjparty-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042494152391:android:863abfab1454d8704f28e2",
+        "android_client_info": {
+          "package_name": "com.example.wadaihjparty"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSziKmAHfHxIGQWiUh7V7F5Gix01nNcG8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

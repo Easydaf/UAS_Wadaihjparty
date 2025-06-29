@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">WadaiHj.Party</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="beranda">Beranda</string>
+    <string name="keranjang">Keranjang</string>
+    <string name="greeting">Selamat Datang Ke Toko Kue Hj.Party</string>
+    <string name="greeting2">Mau Pesan Kue Yang Mana?</string>
+    <string name="btnback">Kembali</string>
+    <string name="tvnamecake">Nama Kue</string>
+    <string name="tvdesccake">Deskripsi Kue</string>
+    <string name="btnAdd">Masukkan ke Keranjang</string>
+    <string name="btnCheckout">Pesan</string>
+    <string name="tvOrder">Pesanan Anda</string>
+    <string name="tvItem">Barang</string>
+    <string name="tvPrice">Harga</string>
+    <string name="btnWhatsapp">Pesan Sekarang</string>
+    <string name="tvProfile">Profil</string>
+    <string name="swtchDark">Mode Gelap</string>
+    <string name="tfname">Nama</string>
+    <string name="tfphone">Nomor HP</string>
+    <string name="language_indonesia">Indonesia</string>
+    <string name="language_english">Inggris</string>
+    <string name="profil">Profil</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="label_forgot_password">Lupa Password?</string>
+    <string name="btn_login">Login</string>
+    <string name="label_no_account">Belum punya akun?</string>
+    <string name="btn_register_nav">Register</string>
+    <string name="register_title">Buat Akun Baru</string>
+    <string name="hint_full_name">Nama Lengkap</string>
+    <string name="hint_Email">Email</string>
+    <string name="hint_whatsapp_number">Nomor WhatsApp</string>
+    <string name="hint_password_register">Password</string>
+    <string name="btn_register">Register</string>
+    <string name="label_have_account">Sudah punya akun?</string>
+    <string name="btn_login_nav">Login</string>
+    <string name="label_cake_size">Ukuran Kue</string>
+    <string name="label_cake_variant">Jenis Kue</string>
+    <string name="hint_theme">Tema (misal: Spiderman, Bunga)</string>
+    <string name="hint_notes">Tulisan di atas kue (misal: Selamat Ultah)</string>
+    <string name="btn_add_custom_to_cart">Tambah ke Keranjang</string>
+    <string name="loading_name">Memuat nama...</string>
+    <string name="loading_num">Memuat nomor...</string>
+    <string name="btn_history">Riwayat Pemesanan</string>
+    <string name="btn_logout"><![CDATA[Logout & Reset]]></string>
+    <string name="login_title">Halo, Selamat Datang!</string>
+
+    <string-array name="cake_sizes">
+        <item>Pilih Ukuran Kue</item>
+        <item>Bulat Kecil (diameter 18cm)</item>
+        <item>Bulat Sedang (diameter 22cm)</item>
+        <item>Bulat Besar (diameter 24cm)</item>
+        <item>Persegi 28x28</item>
+        <item>Persegi 26x26</item>
+        <item>Sesuai Permintaan</item>
+    </string-array>
+    <string-array name="cake_variant">
+        <item>Pilih Jumlah Lapisan</item>
+        <item>Biasa</item>
+        <item>Istimewa</item>
+    </string-array>
+
+
+</resources>

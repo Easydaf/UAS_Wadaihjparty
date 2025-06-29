@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="270dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    android:background="#FFEFD5"
+    android:foreground="?attr/selectableItemBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Gambar Kue -->
+        <ImageView
+            android:id="@+id/iv_cake_image"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded_bg"
+            android:clipToOutline="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Nama Kue -->
+        <TextView
+            android:id="@+id/tv_cake_detail_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Putri Keraton"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/brown_dark"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/iv_cake_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Harga -->
+        <TextView
+            android:id="@+id/tv_history_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Rp250.000"
+            android:textSize="14sp"
+            android:textColor="@color/pink_bold"
+            app:layout_constraintTop_toBottomOf="@id/tv_cake_detail_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,51 @@
+# Nama dari alur kerja (workflow) ini, akan muncul di tab Actions GitHub
+name: Build Wadai Hj. Party APK
+
+# 'on' mendefinisikan kapan workflow ini akan berjalan
+on:
+  # Berjalan setiap kali ada push ke branch 'UAS-Mobile'
+  push:
+    branches: [ "UAS-Mobile" ]
+
+  # Baris ini memungkinkan kamu menjalankan workflow secara manual dari GitHub
+  workflow_dispatch:
+
+# 'jobs' adalah daftar pekerjaan yang akan dilakukan
+jobs:
+  build-apk:
+    # Menggunakan mesin virtual Ubuntu versi terbaru yang disediakan GitHub
+    runs-on: ubuntu-latest
+
+    # 'steps' adalah urutan langkah-langkah di dalam pekerjaan 'build-apk'
+    steps:
+      # Langkah 1: Mengunduh (checkout) kodemu dari branch 'UAS-Mobile'
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Langkah 2: Menyiapkan lingkungan Java Development Kit (JDK) versi 11
+      # yang dibutuhkan untuk membangun aplikasi Android
+      - name: Set up JDK 11
+        uses: actions/setup-java@v4
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+          cache: gradle
+
+      # Langkah 3: Memberikan izin eksekusi pada file gradlew
+      # Ini penting agar "robot" GitHub bisa menjalankan perintah Gradle
+      - name: Grant execute permission for gradlew
+        run: chmod +x ./gradlew
+
+      # Langkah 4: Menjalankan perintah Gradle untuk membangun APK versi debug
+      - name: Build debug APK with Gradle
+        run: ./gradlew assembleDebug
+
+      # Langkah 5: Mengunggah file APK yang sudah jadi sebagai "Artifact"
+      # agar bisa kamu unduh dari halaman Actions
+      - name: Upload APK Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          # Nama file zip yang akan kamu unduh nanti
+          name: WadaiHjParty-debug-apk
+          # Lokasi di mana file APK dibuat oleh Gradle
+          path: app/build/outputs/apk/debug/app-debug.apk

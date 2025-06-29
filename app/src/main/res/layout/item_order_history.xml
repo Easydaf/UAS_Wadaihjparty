@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    android:backgroundTint="@color/brown_main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tv_history_cake_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Nama Kue"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_history_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Rp195.000"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@id/tv_history_cake_num"
+            app:layout_constraintTop_toBottomOf="@id/tv_history_cake_num" />
+
+        <TextView
+            android:id="@+id/tv_history_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="- Detail pesanan akan muncul di sini..."
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_history_price" /> </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

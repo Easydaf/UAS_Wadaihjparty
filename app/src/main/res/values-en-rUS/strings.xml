@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">WadaiHj.Party</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="beranda">Home</string>
+    <string name="keranjang">Cart</string>
+    <string name="greeting">Welcome to Wadai Hj.Party Cake Store</string>
+    <string name="greeting2">What Cake do you want?</string>
+    <string name="btnback">Back</string>
+    <string name="tvnamecake">Cake Name</string>
+    <string name="tvdesccake">Description Cake</string>
+    <string name="btnAdd">Add to cart</string>
+    <string name="btnCheckout">Checjout</string>
+    <string name="tvOrder">Your Order</string>
+    <string name="tvItem">Item</string>
+    <string name="tvPrice">Price</string>
+    <string name="btnWhatsapp">Order Now</string>
+    <string name="tvProfile">Profile</string>
+    <string name="swtchDark">Dark Mode</string>
+    <string name="tfname">Name</string>
+    <string name="tfphone">Number</string>
+    <string name="language_indonesia">Indonesian</string>
+    <string name="language_english">English</string>
+    <string name="profil">Profile</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="label_forgot_password">Forgot the password?</string>
+    <string name="btn_login">Login</string>
+    <string name="label_no_account">Dont have an account yet?</string>
+    <string name="btn_register_nav">Register</string>
+    <string name="register_title">Create a New Account</string>
+    <string name="hint_full_name">Full name</string>
+    <string name="hint_Email">Email</string>
+    <string name="hint_whatsapp_number">Number WhatsApp</string>
+    <string name="hint_password_register">Password</string>
+    <string name="btn_register">Register</string>
+    <string name="label_have_account">Already have an account?</string>
+    <string name="btn_login_nav">Login</string>
+    <string name="label_cake_size">Cake Size</string>
+    <string name="label_cake_variant">Types of Cakes</string>
+    <string name="hint_theme">Theme (eg: Spiderman, Flowers)</string>
+    <string name="hint_notes">Writing on the cake (eg: Happy Birthday)</string>
+    <string name="btn_add_custom_to_cart">Add to Cart</string>
+    <string name="loading_name">Loading name...</string>
+    <string name="loading_num">Loading number...</string>
+    <string name="btn_history">Order History</string>
+    <string name="btn_logout"><![CDATA[Logout & Reset]]></string>
+    <string name="login_title">Hello, Welcome!</string>
+
+
+    <string-array name="cake_sizes">
+        <item>Select Cake Size</item>
+        <item>Small Round (18cm diameter)</item>
+        <item>Medium Round (22cm diameter)</item>
+        <item>Large Round (24cm diameter)</item>
+        <item>Square 28x28</item>
+        <item>Square 26x26</item>
+        <item>Custom Request</item>
+    </string-array>
+    <string-array name="cake_variant">
+        <item>What Variant Do you Want</item>
+        <item>Reguler</item>
+        <item>Special</item>
+    </string-array>
+</resources>
