@@ -6,7 +6,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClient {
-    private const val BASE_URL = "https://wadai-hj-party.free.beeceptor.com/"
+    private const val BASE_URL = "https://mp5dfc563d603a3e1cd1.free.beeceptor.com/"
 
     private val loggingInterceptor =
         HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
