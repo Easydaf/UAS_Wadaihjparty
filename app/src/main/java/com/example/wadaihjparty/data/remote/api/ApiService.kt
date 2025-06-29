@@ -5,6 +5,6 @@ import retrofit2.http.GET
 
 interface ApiService {
 
-    @GET("api/cakes")
+    @GET("/cakes")
     suspend fun getCakes(): List<CakeDto>
 }
