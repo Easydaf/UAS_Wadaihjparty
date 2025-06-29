@@ -35,6 +35,10 @@ class HomeFragment : Fragment() {
         observeViewModel()
         setupRecyclerView()
 
+        binding.swipeRefreshLayout.setOnRefreshListener {
+            Log.d("HomeFragment", "Swipe to refresh dipanggil.")
+            viewModel.refreshCakes()
+        }
         binding.btnCustomCake.setOnClickListener {
             parentFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, CustomCakeFragment())
@@ -59,13 +63,17 @@ class HomeFragment : Fragment() {
         binding.recyclerViewKue.adapter = cakeAdapter
     }
 
-    // Fungsi baru untuk mengamati data dari ViewModel
     private fun observeViewModel() {
-        viewModel.cakeList.observe(viewLifecycleOwner, Observer { cakes ->
-            Log.d("CakeAppDebug", "Fragment: Menerima ${cakes.size} kue dari ViewModel.") // <-- Tambahkan Log
-            // Saat data kue di ViewModel berubah, adapter akan otomatis di-update
+        // Mengamati perubahan pada daftar kue
+        viewModel.cakeList.observe(viewLifecycleOwner) { cakes ->
             cakeAdapter.updateData(cakes)
-        })
+        }
+
+        // Mengamati status loading dari ViewModel
+        viewModel.isLoading.observe(viewLifecycleOwner) { isLoading ->
+            // Tampilkan atau sembunyikan ikon loading dari swipe refresh
+            binding.swipeRefreshLayout.isRefreshing = isLoading
+        }
     }
 
     override fun onDestroyView() {
